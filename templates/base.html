@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title style=>{{title}}</title>
+        <style>
+            title {
+                text-align: center;
+            }
+            label, input, textarea {
+                display: block;
+                margin-bottom: 50px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+        <a href='/blog'>Main Blog Page</a>
+        <a href='/newpost'>Add a Blog Entry</a>
+        </nav>
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>
